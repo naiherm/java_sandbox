@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+h3{
+	padding: 6px;
+	background-color: #aaaaaa;
+	color: white;
+}
+h4{
+	padding: 4px;
+	background-color: #bbbbbb;
+	color: white;
+}
+table{
+	padding: 1px;
+	background-color: #909090; 
+}
+tr{
+	padding: 2px;	
+}
+th{
+	padding: 2px;
+	background-color: #cccccc; 
+}
+td{
+	padding: 2px;
+	background-color: #eeeeee; 
+}
+dt{
+	background-color: #eeeeee;
+	padding: 2px;
+}
+dd{
+	padding: 4px;
+}
+input{
+	padding: 4px; 
+	margin: 2px;
+}
+input[type='range'] 
+{
+	width: 300px;
+	height: 20px;
+}
+.button, input[type='submit']{
+	width: 200px;
+	height: 30px;
+}
+.num{
+	display:inline-block;
+	width: 30px;
+	height: 20px;
+}
+select {
+	padding-right: 5px;
+	padding-left: 5px;
+}
