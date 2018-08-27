@@ -1,3 +1,8 @@
+/**
+ * クラス属性 trigger の要素をクリックすると
+ * 直後の要素の表示非表示が切り替わる
+ * @author med
+ */
 $(document).ready(function(){
 
 	$('.trigger').click(function(){
@@ -8,5 +13,4 @@ $(document).ready(function(){
 			n.show();
 		}
 	});
-	
 });
