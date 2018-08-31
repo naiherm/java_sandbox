@@ -14,4 +14,27 @@ $(document).ready(function(){
 		history.pushState( null, null, null );
 	 });
 	
+	
+	// キーボード押下抑制
+	$(window).on('load', function(){
+		// event hook
+		this.addEventListener("keydown",disablekey,false);
+	//	this.addEventListener('beforeunload', func, false);
+	});
+//	// アンロード無視
+//	function func(event){
+//		event.stopPropagation();
+//		event.preventDefault();
+//	}
+	
+	// F5 キーと Backspaceキーを無効化
+	function disablekey(event){
+		var code = event.keyCode;
+		// f5 = 116 
+		// backspace = 8
+		if(code === 116 ||code === 8){
+			event.preventDefault();
+			event.returnValue=false;
+		}
+	}	
 });
